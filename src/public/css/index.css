@@ -1,0 +1,60 @@
+.attendance__container {
+    display: flex;
+    flex-direction: column; /* 子要素を縦に配置 */
+    justify-content: center; /* 上下中央に配置 */
+    align-items: center; /* 左右中央に配置 */
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.attendance__alert {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.attendance__content,
+.break__content {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; /* 子要素を縦方向に配置 */
+    justify-content: center; /* 左右中央に配置 */
+    align-items: center; /* 上下中央に配置 */
+}
+
+.button-submit {
+    margin: 20px;
+    padding: 70px 150px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 25px;
+    font-weight:600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-submit.disabled {
+    color: #F2F2F2;
+    cursor: default;
+}
+
+/* ホバー時のスタイル */
+.button-submit:hover {
+    background-color: #e9e9e9;
+}
+/* アクティブ（クリック）時のスタイル */
+.button-submit:active {
+    background-color: #e1e1e1;
+}
+
+.button-submit.disabled:hover {
+    background-color: #FFFFFF; /* 通常の背景色に戻す */
+}
+
+.button-submit.disabled:active {
+    background-color: #FFFFFF; /* 通常の背景色に戻す */
+}

@@ -1,0 +1,86 @@
+/* header▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.header {
+    background: #FFFFFF;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 1100px;
+    align-items: center;
+}
+
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav li {
+    margin-right: 40px;
+}
+
+.header-nav li:last-child {
+    margin: 0;
+    /* 最後のli要素の右マージンを0に設定 */
+}
+
+.header-nav__link {
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-nav__button {
+    display: block;
+    border: none;
+    background: transparent;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* header▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
+.main {
+    background: #F2F2F2;
+}
+
+.main_inner {
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 1100px;
+    height: 700px;
+}
+
+.footer {
+    background: #FFFFFF;
+}
+
+.footer_inner {
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 1100px;
+    align-items: center;
+}
+
+.footer_inner span {
+    display: block;
+    text-align: center;
+}
