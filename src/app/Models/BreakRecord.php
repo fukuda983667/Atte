@@ -16,7 +16,6 @@ class BreakRecord extends Model
         'end_time'
     ];
 
-
     // N対1
     public function user()
     {

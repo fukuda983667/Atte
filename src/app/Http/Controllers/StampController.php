@@ -12,7 +12,7 @@ class StampController extends Controller
     // 打刻ページ(ホーム)の表示
     public function index()
     {
-        // 勤務中かどうかを確認する
+        // 勤務中かどうかを確認する existsはtrueかfalseで値を返す。
         $isWorking = AttendanceRecord::where('user_id', auth()->id())
                                     ->whereNotNull('clock_in')
                                     ->whereNull('clock_out')
