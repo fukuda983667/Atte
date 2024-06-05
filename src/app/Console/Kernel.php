@@ -16,7 +16,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // 毎日00:00にカスタムコマンド実行
-        $schedule->command('attendance:handle-midnight')->dailyAt('00:00');
+        $schedule->command('attendance:handle-midnight')
+                ->dailyAt('00:00')
+                ->timezone('Asia/Tokyo');
     }
 
     /**

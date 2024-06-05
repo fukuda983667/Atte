@@ -64,16 +64,16 @@ class HandleAttendanceAtMidnight extends Command
                 // 休憩中だった場合の処理
                 if ($breakRecord) {
                     // 23:59:59に休憩終了打刻
-                    $breakRecord->update(['end_time' => $midnight->toTimeString()]);
+                    $breakRecord->update(['end_time' => $midnight->toDateTimeString()]);
                 }
 
                 // 23:59:59に勤務終了打刻
-                $attendanceRecord->update(['clock_out' => $midnight->toTimeString()]);
+                $attendanceRecord->update(['clock_out' => $midnight->toDateTimeString()]);
 
                 // 00:00:00に勤務開始打刻
                 AttendanceRecord::create([
                     'user_id' => $user->id,
-                    'clock_in' => $nextDay->toTimeString()
+                    'clock_in' => $nextDay->toDateTimeString()
                 ]);
 
                 // 休憩中だった場合の処理
@@ -87,7 +87,7 @@ class HandleAttendanceAtMidnight extends Command
                             ->latest('clock_in')
                             ->first()
                             ->id,
-                        'start_time' => $nextDay->toTimeString()
+                        'start_time' => $nextDay->toDateTimeString()
                     ]);
                 }
             }
