@@ -62,7 +62,8 @@
     background: #F2F2F2;
 }
 
-.main_inner {
+.main__inner {
+    position: relative;
     margin: 0 auto;
     padding: 20px 20px;
     max-width: 1100px;
@@ -73,14 +74,14 @@
     background: #FFFFFF;
 }
 
-.footer_inner {
+.footer__inner {
     margin: 0 auto;
     padding: 20px 20px;
     max-width: 1100px;
     align-items: center;
 }
 
-.footer_inner span {
+.footer__inner span {
     display: block;
     text-align: center;
 }

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\StampController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,5 +26,12 @@ Route::middleware('auth')->group(function () {
     Route::post('/store/end-time', [StampController::class, 'storeEndTime']);
     // 一覧表示ページに遷移する
     Route::get('/attendance', [StampController::class, 'list'])->name('attendance');
+
+    //ユーザ一覧、個別の勤怠表
+    Route::get('/users', [UserController::class, 'userList'])->name('userList');
+    Route::get('/users/attendance', [UserController::class, 'userAttendance'])->name('usersAttendance');
+
+    Route::get('/otp', [OtpController::class, 'showOtpForm'])->name('otpForm');
+    Route::post('/otp', [OtpController::class, 'verifyOtp'])->name('otpVerify');
 });
 

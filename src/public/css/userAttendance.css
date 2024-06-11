@@ -1,26 +1,25 @@
-.attendance-table {
+.heading {
+    margin: 20px 0 50;
+    text-align: center;
+}
+
+.user-table {
     width: 100%;
     border-collapse: collapse;
 }
 
 .attendance-table__row {
-    display: flex;
-    padding: 20px 30px;
-    width: 100%;
     border-top: 1px solid #8E8E8E;
-    align-items: center;
 }
 
-.attendance-table__header {
-    width: 20%;
-    margin-right: 70px;
-    text-align: left;
+.attendance-table__header,
+.attendance-table__item  {
+    padding: 20px 30px;
     font-size: 18px;
+    text-align: left;
 }
 
 .attendance-table__item {
-    width: 20%;
-    margin-right: 70px;
     font-weight: bold;
     vertical-align: middle;
 }
@@ -28,6 +27,17 @@
 .attendance-table__header:last-child,
 .attendance-table__item:last-child {
     margin-right: 0px;
+}
+
+.button {
+    display: inline-block;
+    background: #ceecd2;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
 }
 
 .date-navigation {

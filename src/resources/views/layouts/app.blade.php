@@ -29,6 +29,9 @@
                             <a class="header-nav__link" href="/attendance">日付一覧</a></a>
                         </li>
                         <li class="header-nav__item">
+                            <a class="header-nav__link" href="/users">ユーザ一覧</a></a>
+                        </li>
+                        <li class="header-nav__item">
                             <form action="/logout" method="post">
                                 @csrf
                                 <button class="header-nav__button">ログアウト</button>
@@ -42,13 +45,13 @@
     </header>
 
     <main class="main">
-        <div class="main_inner">
+        <div class="main__inner">
             @yield('content')
         </div>
     </main>
 
     <footer class="footer">
-        <div class="footer_inner">
+        <div class="footer__inner">
             <span>Atte,inc.</span>
         </div>
     </footer>
