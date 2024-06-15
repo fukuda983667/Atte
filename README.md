@@ -1,4 +1,8 @@
-# FashionablyLate
+# Atte
+
+簡単な勤怠管理アプリです。以下はホーム画面。
+
+![サンプル画像](/sample_img.png)
 
 ## 前提条件
 
@@ -75,3 +79,4 @@
 
 ## ER図
 
+![ER図](/ER.svg)
