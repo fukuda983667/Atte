@@ -107,7 +107,7 @@
 - 開発環境(ホームページ) : http://localhost/
 - 日付別勤怠一覧 : http://localhost/attendance
 - ユーザ一覧 : http://localhost/users
-- ユーザ毎勤怠一覧 : http://localhost/users/attendance?id=1
+- ユーザ別勤怠一覧 : http://localhost/users/attendance?id=1
 - ユーザ登録ページ : http://localhost/register
 - ログインページ : http://localhost/login
 
