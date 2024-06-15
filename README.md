@@ -49,6 +49,15 @@
    DB_PASSWORD=laravel_pass
    ```
 
+3. Mailtrapでメール認証機能をテストするため、アカウントを作成してください。
+
+    https://mailtrap.io/
+
+3. Mailtrapでメール認証機能をテストするため、アカウントを作成してください。
+
+    ![env](/img/Mailtrap_env.png)
+
+
 7. アプリケーションキーを生成します。
 
     ```bash
