@@ -105,6 +105,7 @@
 ## URL
 
 - 開発環境(ホームページ) : http://localhost/
+- phpMyAdmin : http://localhost:8080
 - 日付別勤怠一覧 : http://localhost/attendance
 - ユーザ一覧 : http://localhost/users
 - ユーザ別勤怠一覧 : http://localhost/users/attendance?id=1
