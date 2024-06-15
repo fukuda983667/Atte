@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 use App\Http\Controllers\StampController;
 use App\Http\Controllers\UserController;
@@ -16,9 +17,13 @@ use App\Http\Controllers\UserController;
 |
 */
 
+Route::get('/email/verify', function () {
+    return view('auth.verify-email');
+})->middleware('auth')->name('verification.notice');
+
 // デフォルトで用意されているミドルウェアを使用
-// ログイン済みの場合のみ以下のルーティングが有効になる。
-Route::middleware('auth')->group(function () {
+// ミドルウェアは複数適用できる。左から順に処理される。ミドルウェアはリクエストのフィルターの役割
+Route::middleware('auth','verified')->group(function () {
     Route::get('/', [StampController::class, 'index'])->name('index');
     Route::post('/store/clock-in', [StampController::class, 'storeClockIn']);
     Route::post('/store/clock-out', [StampController::class, 'storeClockOut']);
@@ -30,8 +35,5 @@ Route::middleware('auth')->group(function () {
     //ユーザ一覧、個別の勤怠表
     Route::get('/users', [UserController::class, 'userList'])->name('userList');
     Route::get('/users/attendance', [UserController::class, 'userAttendance'])->name('usersAttendance');
-
-    Route::get('/otp', [OtpController::class, 'showOtpForm'])->name('otpForm');
-    Route::post('/otp', [OtpController::class, 'verifyOtp'])->name('otpVerify');
 });
 

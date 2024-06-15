@@ -1,0 +1,47 @@
+.main {
+    background: #F2F2F2;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card__text {
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #8E8E8E;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #F2F2F2;
+}
