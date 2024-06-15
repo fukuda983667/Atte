@@ -1,0 +1,89 @@
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-table__row {
+    display: flex;
+    padding: 20px 30px;
+    width: 100%;
+    border-top: 1px solid #8E8E8E;
+    align-items: center;
+}
+
+.attendance-table__header {
+    width: 20%;
+    margin-right: 70px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.attendance-table__item {
+    width: 20%;
+    margin-right: 70px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.attendance-table__header:last-child,
+.attendance-table__item:last-child {
+    margin-right: 0px;
+}
+
+.date-navigation {
+    display: flex;
+    margin: 20px 0 50px 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-arrow {
+    margin: 0 30px;
+    padding: 0px 15px;
+    text-decoration: none;
+    background: #FFFFFF;
+    color: #214AE0;
+    border: 1px solid #214AE0;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+/* pagination▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.pagination {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .page-item .page-link {
+    padding: 6px 12px;
+    background-color: #fff;
+    color: #2384CE; /* 文字色を設定 */
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #8E8E8E; /* ボーダー色を設定 */
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff; /* アクティブページの文字色を設定 */
+    background-color: #2384CE;
+    border-color: #8E8E8E;
+}
+
+/* 両端の角だけ丸みをつける */
+.pagination .page-item:first-child .page-link {
+    border-top-left-radius: 3px; /* 上左角の丸み */
+    border-bottom-left-radius: 3px; /* 下左角の丸み */
+}
+
+.pagination .page-item:last-child .page-link {
+    border-top-right-radius: 3px; /* 上右角の丸み */
+    border-bottom-right-radius: 3px; /* 下右角の丸み */
+}
+/* pagination▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
