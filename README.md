@@ -53,10 +53,22 @@
 
     https://mailtrap.io/
 
-3. Mailtrapでメール認証機能をテストするため、アカウントを作成してください。
+3. 番号の手順に従って環境変数をコピーしてください。
 
-    ![env](/img/.png)
+    ![env](/img/Mailtrap_env.png)
 
+3. `.env`ファイルの31～36行目に先ほどコピーした値を貼り付け。37,38行目は追記してください。
+
+   ```
+   MAIL_MAILER=smtp
+   MAIL_HOST=sandbox.smtp.mailtrap.io
+   MAIL_PORT=2525
+   MAIL_USERNAME=**************
+   MAIL_PASSWORD=**************
+   MAIL_ENCRYPTION=tls
+   MAIL_FROM_ADDRESS=Atte@example.com
+   MAIL_FROM_NAME="${APP_NAME}"
+   ```
 
 7. アプリケーションキーを生成します。
 
@@ -89,3 +101,13 @@
 ## ER図
 
 ![ER図](/img/ER.svg)
+
+## URL
+
+- 開発環境(ホームページ) : http://localhost/
+- 日付別勤怠一覧 : http://localhost/attendance
+- ユーザ一覧 : http://localhost/users
+- ユーザ毎勤怠一覧 : http://localhost/users/attendance?id=1
+- ユーザ登録ページ : http://localhost/register
+- ログインページ : http://localhost/login
+
