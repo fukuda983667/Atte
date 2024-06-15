@@ -90,6 +90,10 @@
 
 9. アプリケーションがhttp://localhost で利用可能になります。
 
+9. ユーザー登録後、MailtrapのInboxに認証メールが届くので、Verify Email Addressをクリックして認証を完了してください。
+
+![認証メール](/img/認証メール.png)
+
 ## 仕様技術(実行環境)
 
 - PHP : 7.4.9
@@ -117,3 +121,4 @@
 ```
 sudo rm -rf Atte_fukuda_20240616
 ```
+
