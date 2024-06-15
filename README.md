@@ -14,7 +14,7 @@
 1. リポジトリをクローンしたい任意のディレクトリで以下のコマンドを実行してください。
 
     ```bash
-    git clone https://github.com/fukuda983667/FashionablyLate_fukuda_20240525
+    git clone https://github.com/fukuda983667/Atte_fukuda_20240616
     ```
 
 2. Docker Composeを使用してコンテナを作成・起動します。※Docker Descktop起動時に実行してください。
@@ -111,3 +111,8 @@
 - ユーザ登録ページ : http://localhost/register
 - ログインページ : http://localhost/login
 
+## ローカルリポジトリの削除  
+`git clone`したローカルリポジトリを完全に削除します。  
+```
+sudo rm -rf Atte_fukuda_20240616
+```
