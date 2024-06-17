@@ -14,7 +14,7 @@
 1. リポジトリをクローンしたい任意のディレクトリで以下のコマンドを実行してください。
 
     ```bash
-    git clone https://github.com/fukuda983667/Atte_fukuda_20240616
+    git clone https://github.com/fukuda983667/Atte_fukuda_20240617
     ```
 
 2. Docker Composeを使用してコンテナを作成・起動します。※Docker Descktop起動時に実行してください。
