@@ -119,6 +119,6 @@
 ## ローカルリポジトリの削除  
 `git clone`したローカルリポジトリを完全に削除します。  
 ```
-sudo rm -rf Atte_fukuda_20240616
+sudo rm -rf Atte_fukuda_20240617
 ```
 
