@@ -11,12 +11,12 @@
 
 .form {
     margin: 0 auto;
-    width: 25%;
+    width: 30%;
     text-align: center;
 }
 
 .form__group {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .form__error {
@@ -36,7 +36,7 @@
 }
 
 .form__button {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .form__button-submit {

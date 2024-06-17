@@ -18,7 +18,7 @@
             <div class="card__header">メールアドレスをご確認ください</div>
             <div class="card__body">
                 @if (session('resent'))
-                <p class="card__text">{{ message }}</p>
+                <p class="card__text">確認メールを再送信しました。</p><!-- 表示の仕方がわからない。 -->
                 @endif
                 <p class="card__text">もし確認用メールが送信されていない場合は、下記をクリックしてください。</p>
                 <form class="form" method="POST" action="{{ route('verification.send') }}">
